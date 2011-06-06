@@ -2,14 +2,15 @@
 body{font-family:"Lucida Grande","Segoe UI",Tahoma,Arial,sans-serif;font-size:0.85em;color:#444;position:relative;background:url(background.jpg) top center fixed #ffffff;}
 .centered{width:650px;margin:0 auto;text-align:left;}
 .left{float:left;}
+.right{float:right;}
 .clear{clear:both;}
+img{border: 0;}
 a{color:#444;text-decoration:none;}
 a:hover{color:red;text-decoration:underline;cursor:pointer;}
-#heading,
-#sites{-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;padding:1em;margin:1em 0;background:#fff;}
-#heading img{float:left;}
-#heading h1{float:right;font-size:36px;margin-bottom:10px;font-family:Arial;}
-#heading div{width:380px;float:right;text-align:right;}
+#heading, #sites{-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;padding:1em;margin:1em 0;background:#fff;}
+#heading .picture {float:left;}
+#heading .text {float:right;width:380px;text-align:right;}
+#heading .text h1 {clear:both;font-size:36px;margin-bottom:10px;font-family:Arial;}
 #sites .sites-table{width:100%;border-spacing:10px 20px;font-size:0.9em;}
 #sites .sites-table td{text-align:center;vertical-align:top;}
 #sites .sites-table td h3{margin-bottom:5px;}
