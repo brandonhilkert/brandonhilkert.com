@@ -1,0 +1,82 @@
+!!!
+%html
+  %head
+    %title Brandon Hilkert [dot] com
+    %link{:rel => "shortcut icon", :href => "favicon.ico"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "style.css"}
+    
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-24469169-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  %body
+    .centered
+      #heading
+        .picture
+          %img{:src => "brandonhilkert.jpg"}
+          %br
+          %a{:href => "http://www.linkedin.com/in/brandonhilkert", :target => "_blank"}
+            %img{:src => "linkedin.png"}
+          %a{:href => "http://www.twitter.com/brandonhilkert", :target => "_blank"}
+            %img{:src => "twitter.png"}
+        .text
+          %h1 Brandon Hilkert
+          %div
+            My name is Brandon and I make applications.
+            %br
+            %br
+            For most of my career I've been lucky enough to be surrounded by really smart people. 
+            I'm a Technology Entrepreneur and have a passion for building something from nothing. 
+            Currently using Ruby, Rails, MySQL, MongoDB, EC2, and Heroku.
+          %br.clear
+        %br.clear
+      #sites
+        %table.sites-table
+          %tbody
+            %tr
+              %td
+                %a{:href => "http://defriendnotifierap.com", :target => "_blank"}
+                  %img{:src => "defriendnotifier.png"}
+                %a{:href => "http://defriendnotifierap.com", :target => "_blank"}
+                  %h3 Defriend Notifier
+                Defriend Notifier notifies you when someone defriends you on Facebook!
+              %td
+                %a{:href => "http://meeteor.com", :target => "_blank"}
+                  %img{:src => "meeteor.png"}
+                %a{:href => "http://meeteor.com", :target => "_blank"}
+                  %h3 Meeteor
+                Meeteor introduces you to people you don't know, but should
+              %td
+                %a{:href => "http://stradl.com", :target => "_blank"}
+                  %img{:src => "stradl.png"}
+                %a{:href => "http://stradl.com", :target => "_blank"}
+                  %h3 Stradl
+                Stradl is a management platform to streamline targeted advertising campaigns for digital signage
+            %tr
+              %td
+                %a{:href => "http://shopitshareit.com", :target => "_blank"}
+                  %img{:src => "sisi.png"}
+                %a{:href => "http://shopitshareit.com", :target => "_blank"}
+                  %h3 Shop it. Share it.
+                Shop it. Share it. is a social network focused around shopping and the sharing of fashion related purchases
+              %td
+                %img{:src => "databanks.png"}
+                %h3 Databanks
+                Databanks is a marketplace where consumers buy and sell industry data 
+              %td
+                %img{:src => "helpdesk.png"}
+                %h3 Simple Helpdesk
+                Simple Helpdesk is a simplified helpdesk management system with analytics and ticket monitoring
+            %tr
+              %td
+                %a{:href => "http://bigbluesound.com", :target => "_blank"}
+                  %img{:src => "bbs.png"}
+                %a{:href => "http://bigbluesound.com", :target => "_blank"}
+                  %h3 Big Blue Sound
+                Big Blue Sound is an independent recording studio that focuses on creative recording techniques and sound production
