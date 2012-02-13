@@ -1,5 +1,5 @@
-# myapp.rb
-require 'sinatra'
+require 'bundler'
+Bundler.require
 
 get '/' do
   haml :index

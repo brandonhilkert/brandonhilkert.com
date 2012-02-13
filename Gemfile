@@ -1,3 +1,6 @@
-source 'http://rubygems.org'
-gem "sinatra"
-gem "haml"
+source :rubygems
+
+gem 'sinatra'
+gem 'shotgun'
+gem 'haml'
+gem 'unicorn'
