@@ -5,12 +5,9 @@
     %meta{property: "desription", content: "I'm a Technology Entrepreneur and have a passion for building something from nothing. I'm motivated by people with purpose and ambition that have a continuing drive to learn and succeed."}
     %link{:rel => "shortcut icon", href: "favicon.ico"}
     %link{:rel => "stylesheet", :type => "text/css", href: "style.css"}
-    %link{:rel => "stylesheet", :type => "text/css", href: "bootstrap-tooltip.css"}
     %link{:rel => "stylesheet", :type => "text/css", href: "http://fonts.googleapis.com/css?family=Open+Sans"}
     %link{:rel => "stylesheet", :type => "text/css", href: "http://fonts.googleapis.com/css?family=Lobster"}
     %link{:rel => "stylesheet", :type => "text/css", href: "http://fonts.googleapis.com/css?family=Cabin+Sketch"}
-    %script{src: "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
-    %script{src: "bootstrap-tooltip.js"}
     
     :javascript
       var _gaq = _gaq || [];
@@ -48,60 +45,70 @@
             I'm a Technology Entrepreneur and have a passion for building something from nothing. 
             I'm motivated by people with purpose and ambition that have a continuing drive to learn and succeed.
             I tend to use Ruby, Rails, MongoDB, MySQL, Heroku, EC2, Javascript, jQuery, HTML, and CSS.
+            %br
+            %br
+            You can also hear me in  
+            %a{href: "http://itunes.apple.com/us/artist/i-am-lightning/id497858713", target: "_blank"} I Am Lightning, 
+            %a{href: "http://itunes.apple.com/us/artist/the-solitary-system/id268403752", target: "_blank"} The Solitary System,
+            and
+            %a{href: "http://itunes.apple.com/us/artist/rarae-avis/id7673865", target: "_blank"} Rarae Avis.
           %br.clear
         %br.clear
       #sites.rounded
-        %table.sites-table
-          %tbody
-            %tr
-              %td
-                %img{src: "meeteor.png", rel: "popover", data: {content: "Meeteor is a professional networking service built on top of Facebook that connects you to the employers and industries you're interested in.", "original-title" => "Meeteor"}}
-                %br
-                
-                %a{href: "http://meeteor.com", target: "_blank"}
-                  %h3 Meeteor
 
-              %td
-                %img{src: "defriendnotifier.png", rel: "popover", data: {content: "Defriend Notifier notifies you when someone defriends you on Facebook!", "original-title" => "Defriend Notifier"}}
-                %br
-                
-                %a{href: "http://defriendnotifierapp.com", target: "_blank"}
-                  %h3 Defriend Notifier
-                
-              
-              %td
-                %img{src: "stradl.png", rel: "popover", data: {content: "Stradl is a management platform to streamline targeted advertising campaigns for digital signage", "original-title" => "Stradl"}}
-                %br
-                
-                %h3 Stradl
-                
-            %tr
-              %td
-                %a{href: "http://shopitshareit.com", target: "_blank"}
-                  %img{src: "sisi.png", rel: "popover", data: {content: "Shop it. Share it. is a social network focused around shopping and the sharing of fashion related purchases", "original-title" => "Shop it. Share it."}}
-                %br
-                
-                %a{href: "http://shopitshareit.com", target: "_blank"}
-                  %h3 Shop it. Share it.
-                
-              %td
-                %img{src: "databanks.png", rel: "popover", data: {content: "Databanks is a marketplace where consumers buy and sell industry data", "original-title" => "Databanks"}}
-                %br
-                
-                %h3 Databanks
+        .site
+          %img{src: "meeteor.png"}
+          %a{href: "http://meeteor.com", target: "_blank"}
+            %h3 Meeteor
+          .description
+            Meeteor is a professional networking service built on top of Facebook that connects you to the employers and industries you're interested in.
 
-              %td
-                %img{src: "helpdesk.png", rel: "popover", data: {content: "Simple Helpdesk is a simplified helpdesk management system with analytics and ticket monitoring", "original-title" => "Simple Helpdesk"}}
-                %br
-                
-                %h3 Simple Helpdesk
-            
-            %tr
-              %td
-                %a{href: "http://bigbluesound.com", target: "_blank"}
-                  %img{src: "bbs.png", rel: "popover", data: {content: "Big Blue Sound is an independent recording studio that focuses on creative recording techniques and sound production", "original-title" => "Big Blue Sound"}}
-                %br
-                
-                %a{href: "http://bigbluesound.com", target: "_blank"}
-                  %h3 Big Blue Sound
+
+        .site.pad
+          %img{src: "defriendnotifier.png"}
+          %a{href: "http://defriendnotifierapp.com", target: "_blank"}
+            %h3 Defriend Notifier
+          .description
+            Defriend Notifier is an application that notifies you when via email when someone unfriends you on Facebook. Don't be caught by surprise when you can no longer find that "friend" you've been looking for.
+          
+        
+        .site
+          %img{src: "stradl.png"}
+          %h3 Stradl
+          .description
+            Stradl was a management platform dedicated to streamlining targeted advertising campaigns for digital signage allowing users to pinpoint a time and place their media was presented.
+          
+        %br.clear
+
+        .site
+          %a{href: "http://shopitshareit.com", target: "_blank"}
+            %img{src: "sisi.png"}
+          %a{href: "http://shopitshareit.com", target: "_blank"}
+            %h3 Shop it. Share it.
+          .description
+            Shop it. Share it. is a social network focused around shopping and the sharing of fashion related purchases allowing users to show off recent purchased, along with getting feedback on your latest and greatest.
+          
+        .site.pad
+          %img{src: "databanks.png"}
+          %h3 Databanks
+          .description
+            Databanks was a marketplace for consumer datasets allowing users to not only find datasets on extraneous subjects, but sell publicly available, but hard to find datasets, resulting in financial paybacks for the dataset supplier.
+
+        .site
+          %img{src: "helpdesk.png"}
+          %h3 Simple Helpdesk
+          .description
+            Simple Helpdesk is a simplified helpdesk management system with analytics and ticket monitoring dashboards. Most helpdesk solutions are bloated with complexity and Simple Helpdesk took the most basic details allowing users to submit tickets without the added burden.
+
+        %br.clear
+
+        .site
+          %a{href: "http://bigbluesound.com", target: "_blank"}
+            %img{src: "bbs.png"}
+          %a{href: "http://bigbluesound.com", target: "_blank"}
+            %h3 Big Blue Sound
+          .description
+            Big Blue Sound is an independent recording studio in Chester County, PA that focuses on creative recording techniques while extracting the the organic sounds of a band's live sound.
+
+        %br.clear
                 

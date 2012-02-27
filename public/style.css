@@ -83,31 +83,29 @@ a:hover {
   margin-bottom: 5px;
 }
 
-#sites .sites-table {
-  border-spacing: 10px 20px;
-  width: 100%;
-}
-
-#sites .sites-table td {
+#sites .site {
+  width: 190px;
+  float: left;
+  margin-bottom: 30px;
   text-align: center;
-  vertical-align: top;
 }
 
-#sites .sites-table td h3 {
-  margin-bottom: 5px;
+#sites .pad {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-#sites .sites-table td a {
-  display: inline-block;
-}
-
-#sites .sites-table td img {
-  border: 0;
+#sites .site h3 {
   margin-bottom: 10px;
-  display: inline-block;
 }
+
+#sites .site .description {
+  font-size: 12px;
+}
+
 
 #sites img {
+  margin-bottom: 10px;
   border-radius: 2px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   moz-border-radius: 2px;
